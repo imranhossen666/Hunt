@@ -1,4 +1,8 @@
 @media (max-width: 575.98px){    /* For small potrait */
+
+    #banner {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 99%);
+    }
     .nav-main ul li a {
         padding-bottom: 30px !important;
     }
@@ -6,22 +10,115 @@
         bottom: 20px;
     }
 
+    .banner-text {
+        top: 130px;
+    }
+    .banner-btn a {
+        margin: 5px;
+    }
+    .prev-icon {
+        left: 0;
+    }
+    .next-icon {
+        right: 0;
+    }
+
     .box-left, .box-right {
         display: none;
     }
+
     #portfolio {
         clip-path: polygon(0 1%, 100% 0%, 100% 99%, 0% 100%);
     }
     .portfolio-main {
-        padding: 50px 40px 0 40px;
+        padding: 50px 20px 0 20px;
     }
 
+   
     .service-items {
         display: flex !important;
         justify-content: space-between !important;
-        flex-direction: column-reverse !important;
     }
+    .service-items h3 {
+        margin-top: -50px;
+        background-color: #fec600;
+        padding: 10px 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .service-text {
+        padding: 20px;
+    }
+    .service-text-r {
+        padding: 20px;
+    }
+    .service-prev {
+        top: 95%;
+        left: 5%;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+    }
+    .service-next {
+        left: 85%;
+        bottom: 0;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+    }
+    
+    .prop {
+        flex-direction: column-reverse;
+    }
+    .service-text::after {
+        display: none;
+    }
+    .service-text::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-color: #f1f1f1;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%) rotate(45deg);
+        -webkit-transform: translate(-50%, 50%) rotate(45deg);
+        -moz-transform: translate(-50%, 50%) rotate(45deg);
+        -ms-transform: translate(-50%, 50%) rotate(45deg);
+        -o-transform: translate(-50%, 50%) rotate(45deg);
+    }
+    .service-text-r::after {
+        display: none;
+    }
+    .service-text-r::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-color: #f1f1f1;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%) rotate(45deg);
+        -webkit-transform: translate(-50%, 50%) rotate(45deg);
+        -moz-transform: translate(-50%, 50%) rotate(45deg);
+        -ms-transform: translate(-50%, 50%) rotate(45deg);
+        -o-transform: translate(-50%, 50%) rotate(45deg);
+    }
+    .service-inner {
+        margin-top: -30px;
+    }
+    
 
+    #feedback {
+        clip-path: polygon(0 3%, 100% 1%, 100% 97%, 0 99%);
+    }
     .feedback-main {
         display: flex;
         flex-direction: column;
@@ -30,7 +127,7 @@
         width: 100%;
     }
     .feedback-text {
-        max-width: 400px;
+        width: 100%;
         margin-left: 0;
         margin-top: 0;
     }
@@ -47,7 +144,7 @@
     }
     .feedback-prev {
         top: 0;
-        left: 40%;
+        left: 30%;
         transform: rotate(-90deg);
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
@@ -56,7 +153,7 @@
     }
     .feedback-next {
         top: 0;
-        right: 40%;
+        right: 30%;
         transform: rotate(-90deg);
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
@@ -65,7 +162,7 @@
     }
 
     .plan-main {
-        margin: 0 30px;
+        margin: 0 0;
     }
     .plan-items {
         margin: 15px 0;
@@ -80,7 +177,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .counter-items {
         width: 100%;

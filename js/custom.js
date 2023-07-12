@@ -1,3 +1,4 @@
+
 var navIcon = document.querySelector(".nav-icon")
 var navStyle = document.querySelector(".nav-style")
 var navClose = document.querySelector(".nav-close")
@@ -5,8 +6,6 @@ var navClose = document.querySelector(".nav-close")
 navIcon.addEventListener("click", ()=> {
     navStyle.classList.toggle("navDark")  
 })
-
-
 
 $('.banner-slick-slider-main').slick({
     slidesToShow: 1,
@@ -43,6 +42,8 @@ $('.prev-icon').on('click', function() {
         breakpoint: 576,
         settings: {
           vertical: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]
@@ -54,8 +55,6 @@ $('.prev-icon').on('click', function() {
   $('.service-next').on('click', function() {
     $('.service-items-main').slick('slickNext');
 });
-
-
 
 
 $('.feedback-img').slick({
@@ -73,12 +72,15 @@ $('.feedback-img').slick({
       breakpoint: 768,
       settings: {
         vertical: false,
+        
       }
     },
     {
       breakpoint: 576,
       settings: {
         vertical: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
       }
     }
   ]
@@ -106,21 +108,3 @@ jQuery(document).ready(function($) {
       time: 2000
   });
 });
-
-// $('.feedback-text').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.feedback-img'
-// });
-// $('.feedback-img').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-//   asNavFor: '.feedback-text',
-//   centerMode: true,
-//   centerPadding: '20px',
-//   vertical: true,
-// });
